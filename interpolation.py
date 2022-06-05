@@ -16,7 +16,7 @@ def linear(table,point):
         print(table[i][0],table[i][1])
     else:
         p=round(f(table[i][0],table[i][1],table[i+1][0],table[i+1][1],point),6)
-        print("the point is",p)
+        print("the point of",point,"is",p)
 
 
 
@@ -71,7 +71,7 @@ def polynom(table,point):
         mat=getMatrixInverse(mat)
         g=mult(mat,vec)
         sum=g[0][0]+(g[1][0]*point)+(g[2][0]*(point**2))
-        print(sum)
+        print("the point of",point,"is",round(sum,5))
 
 
 
